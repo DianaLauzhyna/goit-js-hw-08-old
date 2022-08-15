@@ -10,6 +10,7 @@ const onPlay = function (data) {
   localStorage.setItem(STORAGE_KEY, data.seconds);
 };
 
+
 player.on('timeupdate', throttle(onPlay, 1000));
 
 const savedData = localStorage.getItem(STORAGE_KEY);
