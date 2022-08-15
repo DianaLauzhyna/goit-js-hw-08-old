@@ -11,6 +11,7 @@ const markupGallery = createMarkupGallery(galleryItems);
 
 galleryList.insertAdjacentHTML('beforeend', markupGallery);
 
+
 // Створення динамічної розмітки
 function createMarkupGallery(array) {
   return array

@@ -20,7 +20,10 @@ function onTextInput(event) {
 function onFormSubmit(event) {
   event.preventDefault();
 
-  if (formEl.elements.email.value === '' || formEl.elements.message.value === '') {
+  if (
+    formEl.elements.email.value === '' ||
+    formEl.elements.message.value === ''
+  ) {
     alert('Enter something in field');
   } else {
     console.log(formData);
